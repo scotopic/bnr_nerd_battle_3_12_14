@@ -8,6 +8,8 @@ bnr_nerd_battle_3_12_14
  * ```~/Documents/ios_workspace_personal```
  * ```git clone https://github.com/scotopic/bnr_nerd_battle_3_12_14```
  * ```cd bnr_nerd_battle_3_12_14```
+ * ```git config --global user.name "Your Name"```
+ * ```git config --global user.email you@example.com```
 
 ### normal usage of git
  * verify your commit contains proper changes
