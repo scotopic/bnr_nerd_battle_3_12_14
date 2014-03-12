@@ -12,6 +12,8 @@ bnr_nerd_battle_3_12_14
  * ```git config --global user.email you@example.com```
 
 ### normal usage of git
+ * get the latest
+  * ```git pull```
  * verify your commit contains proper changes
   * ```git status``` and ```git diff```
  * normally you can *add* and *commit* your files with one command
