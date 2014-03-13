@@ -19,6 +19,7 @@
 }
 @property(nonatomic,assign) NSInteger undoSteps;
 @property(nonatomic, strong) DWFParticleView* fireView;
+@property(nonatomic, strong) UIColor *drawingColor;
 
 -(void)undoButtonClicked;
 -(void)redoButtonClicked;

@@ -37,9 +37,14 @@
 - (void)drawRect:(CGRect)rect
 {
     
-    [[UIColor redColor] setStroke];
-    for (UIBezierPath *_path in pathArray) 
-    [_path strokeWithBlendMode:kCGBlendModeNormal alpha:1.0];    
+//    [[UIColor redColor] setStroke];
+//    [[self.drawingColor] setStroke];
+    
+    [self.drawingColor setStroke];
+    
+    for (UIBezierPath *_path in pathArray) {
+        [_path strokeWithBlendMode:kCGBlendModeNormal alpha:1.0];
+    }
 
 
 }
@@ -50,7 +55,6 @@
     myPath=[[UIBezierPath alloc]init];
     myPath.lineWidth=10;
     
-
     UITouch *mytouch=[[touches allObjects] objectAtIndex:0];
     [myPath moveToPoint:[mytouch locationInView:self]];
     
