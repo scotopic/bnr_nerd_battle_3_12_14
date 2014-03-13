@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E2EA14218D25D690035C570 /* BNRGrowAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2EA14118D25D690035C570 /* BNRGrowAnimator.m */; };
 		3C33949F18D22A640073F847 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C33949E18D22A640073F847 /* Foundation.framework */; };
 		3C3394A118D22A640073F847 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3394A018D22A640073F847 /* CoreGraphics.framework */; };
 		3C3394A318D22A640073F847 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3394A218D22A640073F847 /* UIKit.framework */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E2EA14118D25D690035C570 /* BNRGrowAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRGrowAnimator.m; sourceTree = "<group>"; };
 		3C33949B18D22A640073F847 /* BigNerdsPaint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigNerdsPaint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C33949E18D22A640073F847 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3C3394A018D22A640073F847 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -149,6 +151,7 @@
 		3C3394A418D22A640073F847 /* BigNerdsPaint */ = {
 			isa = PBXGroup;
 			children = (
+				2E2EA14118D25D690035C570 /* BNRGrowAnimator.m */,
 				3C3394AD18D22A640073F847 /* BNRAppDelegate.h */,
 				3C3394AE18D22A640073F847 /* BNRAppDelegate.m */,
 				3C33952618D231860073F847 /* BNRCanvasViewController.h */,
@@ -336,6 +339,7 @@
 				3CCADF0718D25CD2001564E6 /* BNRFadeAnimator.m in Sources */,
 				E88295E218D24ADC007FDB5D /* MyLineDrawingView.m in Sources */,
 				E88295ED18D25767007FDB5D /* FCColorPickerViewController.m in Sources */,
+				2E2EA14218D25D690035C570 /* BNRGrowAnimator.m in Sources */,
 				E88295E118D24ADC007FDB5D /* DWFParticleView.m in Sources */,
 				E88295F018D25767007FDB5D /* FCColorSwatchView.m in Sources */,
 				3CCADF0818D25CD2001564E6 /* BNRGalleryLayout.m in Sources */,
