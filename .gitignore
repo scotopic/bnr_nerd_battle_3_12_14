@@ -1,0 +1,39 @@
+# Xcode
+build/*
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspective
+*.perspectivev3
+!default.perspectivev3
+!default.xcworkspace
+xcuserdata
+*.xccheckout
+profile
+*.moved-aside
+DerivedData
+*.swp
+uncrustify/build/*
+uncrustify/src/*.o
+*/Tools/uncrustify/build/*
+*/Tools/uncrustify/src/*.o
+Tools/uncrustify/build/*
+Tools/uncrustify/src/*.o
+*/build/*
+
+# osx noise
+.DS_Store
+profile
+
+uncrustify/build/*
+uncrustify/src/*.o
+# AppCode
+/.idea/
+
+ZapposMobile.xcodeproj/xcuserdata/*.xcuserdatad
+ZapposMobile.xcodeproj/project.xcworkspace/xcuserdata/
+cpd-output.xml
+contents.xcworkspacedata

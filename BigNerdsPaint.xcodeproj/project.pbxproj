@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C33949F18D22A640073F847 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C33949E18D22A640073F847 /* Foundation.framework */; };
+		3C3394A118D22A640073F847 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3394A018D22A640073F847 /* CoreGraphics.framework */; };
+		3C3394A318D22A640073F847 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3394A218D22A640073F847 /* UIKit.framework */; };
+		3C3394A918D22A640073F847 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C3394A718D22A640073F847 /* InfoPlist.strings */; };
+		3C3394AB18D22A640073F847 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3394AA18D22A640073F847 /* main.m */; };
+		3C3394AF18D22A640073F847 /* BNRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3394AE18D22A640073F847 /* BNRAppDelegate.m */; };
+		3C3394BA18D22A640073F847 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C3394B918D22A640073F847 /* Images.xcassets */; };
+		3C3394C118D22A640073F847 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3394C018D22A640073F847 /* XCTest.framework */; };
+		3C3394C218D22A640073F847 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C33949E18D22A640073F847 /* Foundation.framework */; };
+		3C3394C318D22A640073F847 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3394A218D22A640073F847 /* UIKit.framework */; };
+		3C3394CB18D22A640073F847 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C3394C918D22A640073F847 /* InfoPlist.strings */; };
+		3C3394CD18D22A640073F847 /* BigNerdsPaintTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3394CC18D22A640073F847 /* BigNerdsPaintTests.m */; };
+		3C3394D718D22A8B0073F847 /* Main_IPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C3394D618D22A8B0073F847 /* Main_IPad.xib */; };
+		3C3394D918D22A9F0073F847 /* Main_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C3394D818D22A9F0073F847 /* Main_iPhone.xib */; };
+		3C33952418D2316B0073F847 /* BNRGalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C33952218D2316B0073F847 /* BNRGalleryViewController.m */; };
+		3C33952518D2316B0073F847 /* BNRGalleryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C33952318D2316B0073F847 /* BNRGalleryViewController.xib */; };
+		3C33952918D231860073F847 /* BNRCanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C33952718D231860073F847 /* BNRCanvasViewController.m */; };
+		3C33952A18D231860073F847 /* BNRCanvasViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C33952818D231860073F847 /* BNRCanvasViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C3394C418D22A640073F847 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C33949318D22A640073F847 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C33949A18D22A640073F847;
+			remoteInfo = BigNerdsPaint;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3C33949B18D22A640073F847 /* BigNerdsPaint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigNerdsPaint.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C33949E18D22A640073F847 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3C3394A018D22A640073F847 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3C3394A218D22A640073F847 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3C3394A618D22A640073F847 /* BigNerdsPaint-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BigNerdsPaint-Info.plist"; sourceTree = "<group>"; };
+		3C3394A818D22A640073F847 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3C3394AA18D22A640073F847 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3C3394AC18D22A640073F847 /* BigNerdsPaint-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BigNerdsPaint-Prefix.pch"; sourceTree = "<group>"; };
+		3C3394AD18D22A640073F847 /* BNRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNRAppDelegate.h; sourceTree = "<group>"; };
+		3C3394AE18D22A640073F847 /* BNRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNRAppDelegate.m; sourceTree = "<group>"; };
+		3C3394B918D22A640073F847 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3C3394BF18D22A640073F847 /* BigNerdsPaintTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BigNerdsPaintTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C3394C018D22A640073F847 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3C3394C818D22A640073F847 /* BigNerdsPaintTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BigNerdsPaintTests-Info.plist"; sourceTree = "<group>"; };
+		3C3394CA18D22A640073F847 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3C3394CC18D22A640073F847 /* BigNerdsPaintTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BigNerdsPaintTests.m; sourceTree = "<group>"; };
+		3C3394D618D22A8B0073F847 /* Main_IPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Main_IPad.xib; sourceTree = "<group>"; };
+		3C3394D818D22A9F0073F847 /* Main_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Main_iPhone.xib; sourceTree = "<group>"; };
+		3C33952118D2316B0073F847 /* BNRGalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRGalleryViewController.h; sourceTree = "<group>"; };
+		3C33952218D2316B0073F847 /* BNRGalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRGalleryViewController.m; sourceTree = "<group>"; };
+		3C33952318D2316B0073F847 /* BNRGalleryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BNRGalleryViewController.xib; sourceTree = "<group>"; };
+		3C33952618D231860073F847 /* BNRCanvasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRCanvasViewController.h; sourceTree = "<group>"; };
+		3C33952718D231860073F847 /* BNRCanvasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRCanvasViewController.m; sourceTree = "<group>"; };
+		3C33952818D231860073F847 /* BNRCanvasViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BNRCanvasViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C33949818D22A640073F847 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C3394A118D22A640073F847 /* CoreGraphics.framework in Frameworks */,
+				3C3394A318D22A640073F847 /* UIKit.framework in Frameworks */,
+				3C33949F18D22A640073F847 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C3394BC18D22A640073F847 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C3394C118D22A640073F847 /* XCTest.framework in Frameworks */,
+				3C3394C318D22A640073F847 /* UIKit.framework in Frameworks */,
+				3C3394C218D22A640073F847 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C33949218D22A640073F847 = {
+			isa = PBXGroup;
+			children = (
+				3C3394A418D22A640073F847 /* BigNerdsPaint */,
+				3C3394C618D22A640073F847 /* BigNerdsPaintTests */,
+				3C33949D18D22A640073F847 /* Frameworks */,
+				3C33949C18D22A640073F847 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3C33949C18D22A640073F847 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C33949B18D22A640073F847 /* BigNerdsPaint.app */,
+				3C3394BF18D22A640073F847 /* BigNerdsPaintTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C33949D18D22A640073F847 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C33949E18D22A640073F847 /* Foundation.framework */,
+				3C3394A018D22A640073F847 /* CoreGraphics.framework */,
+				3C3394A218D22A640073F847 /* UIKit.framework */,
+				3C3394C018D22A640073F847 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C3394A418D22A640073F847 /* BigNerdsPaint */ = {
+			isa = PBXGroup;
+			children = (
+				3C3394AD18D22A640073F847 /* BNRAppDelegate.h */,
+				3C3394AE18D22A640073F847 /* BNRAppDelegate.m */,
+				3C33952618D231860073F847 /* BNRCanvasViewController.h */,
+				3C33952718D231860073F847 /* BNRCanvasViewController.m */,
+				3C33952818D231860073F847 /* BNRCanvasViewController.xib */,
+				3C33952118D2316B0073F847 /* BNRGalleryViewController.h */,
+				3C33952218D2316B0073F847 /* BNRGalleryViewController.m */,
+				3C33952318D2316B0073F847 /* BNRGalleryViewController.xib */,
+				3C3394B918D22A640073F847 /* Images.xcassets */,
+				3C3394D618D22A8B0073F847 /* Main_IPad.xib */,
+				3C3394D818D22A9F0073F847 /* Main_iPhone.xib */,
+				3C3394A518D22A640073F847 /* Supporting Files */,
+			);
+			path = BigNerdsPaint;
+			sourceTree = "<group>";
+		};
+		3C3394A518D22A640073F847 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3C3394A618D22A640073F847 /* BigNerdsPaint-Info.plist */,
+				3C3394A718D22A640073F847 /* InfoPlist.strings */,
+				3C3394AA18D22A640073F847 /* main.m */,
+				3C3394AC18D22A640073F847 /* BigNerdsPaint-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3C3394C618D22A640073F847 /* BigNerdsPaintTests */ = {
+			isa = PBXGroup;
+			children = (
+				3C3394CC18D22A640073F847 /* BigNerdsPaintTests.m */,
+				3C3394C718D22A640073F847 /* Supporting Files */,
+			);
+			path = BigNerdsPaintTests;
+			sourceTree = "<group>";
+		};
+		3C3394C718D22A640073F847 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3C3394C818D22A640073F847 /* BigNerdsPaintTests-Info.plist */,
+				3C3394C918D22A640073F847 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C33949A18D22A640073F847 /* BigNerdsPaint */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C3394D018D22A640073F847 /* Build configuration list for PBXNativeTarget "BigNerdsPaint" */;
+			buildPhases = (
+				3C33949718D22A640073F847 /* Sources */,
+				3C33949818D22A640073F847 /* Frameworks */,
+				3C33949918D22A640073F847 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BigNerdsPaint;
+			productName = BigNerdsPaint;
+			productReference = 3C33949B18D22A640073F847 /* BigNerdsPaint.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3C3394BE18D22A640073F847 /* BigNerdsPaintTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C3394D318D22A640073F847 /* Build configuration list for PBXNativeTarget "BigNerdsPaintTests" */;
+			buildPhases = (
+				3C3394BB18D22A640073F847 /* Sources */,
+				3C3394BC18D22A640073F847 /* Frameworks */,
+				3C3394BD18D22A640073F847 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C3394C518D22A640073F847 /* PBXTargetDependency */,
+			);
+			name = BigNerdsPaintTests;
+			productName = BigNerdsPaintTests;
+			productReference = 3C3394BF18D22A640073F847 /* BigNerdsPaintTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C33949318D22A640073F847 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BNR;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Big Nerd Ranch";
+				TargetAttributes = {
+					3C3394BE18D22A640073F847 = {
+						TestTargetID = 3C33949A18D22A640073F847;
+					};
+				};
+			};
+			buildConfigurationList = 3C33949618D22A640073F847 /* Build configuration list for PBXProject "BigNerdsPaint" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3C33949218D22A640073F847;
+			productRefGroup = 3C33949C18D22A640073F847 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C33949A18D22A640073F847 /* BigNerdsPaint */,
+				3C3394BE18D22A640073F847 /* BigNerdsPaintTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C33949918D22A640073F847 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C3394D718D22A8B0073F847 /* Main_IPad.xib in Resources */,
+				3C3394BA18D22A640073F847 /* Images.xcassets in Resources */,
+				3C3394A918D22A640073F847 /* InfoPlist.strings in Resources */,
+				3C33952518D2316B0073F847 /* BNRGalleryViewController.xib in Resources */,
+				3C3394D918D22A9F0073F847 /* Main_iPhone.xib in Resources */,
+				3C33952A18D231860073F847 /* BNRCanvasViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C3394BD18D22A640073F847 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C3394CB18D22A640073F847 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C33949718D22A640073F847 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C3394AB18D22A640073F847 /* main.m in Sources */,
+				3C3394AF18D22A640073F847 /* BNRAppDelegate.m in Sources */,
+				3C33952418D2316B0073F847 /* BNRGalleryViewController.m in Sources */,
+				3C33952918D231860073F847 /* BNRCanvasViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C3394BB18D22A640073F847 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C3394CD18D22A640073F847 /* BigNerdsPaintTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3C3394C518D22A640073F847 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C33949A18D22A640073F847 /* BigNerdsPaint */;
+			targetProxy = 3C3394C418D22A640073F847 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3C3394A718D22A640073F847 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C3394A818D22A640073F847 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3C3394C918D22A640073F847 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C3394CA18D22A640073F847 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3C3394CE18D22A640073F847 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3C3394CF18D22A640073F847 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C3394D118D22A640073F847 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BigNerdsPaint/BigNerdsPaint-Prefix.pch";
+				INFOPLIST_FILE = "BigNerdsPaint/BigNerdsPaint-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3C3394D218D22A640073F847 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BigNerdsPaint/BigNerdsPaint-Prefix.pch";
+				INFOPLIST_FILE = "BigNerdsPaint/BigNerdsPaint-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3C3394D418D22A640073F847 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BigNerdsPaint.app/BigNerdsPaint";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BigNerdsPaint/BigNerdsPaint-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BigNerdsPaintTests/BigNerdsPaintTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		3C3394D518D22A640073F847 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BigNerdsPaint.app/BigNerdsPaint";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BigNerdsPaint/BigNerdsPaint-Prefix.pch";
+				INFOPLIST_FILE = "BigNerdsPaintTests/BigNerdsPaintTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C33949618D22A640073F847 /* Build configuration list for PBXProject "BigNerdsPaint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C3394CE18D22A640073F847 /* Debug */,
+				3C3394CF18D22A640073F847 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C3394D018D22A640073F847 /* Build configuration list for PBXNativeTarget "BigNerdsPaint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C3394D118D22A640073F847 /* Debug */,
+				3C3394D218D22A640073F847 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3C3394D318D22A640073F847 /* Build configuration list for PBXNativeTarget "BigNerdsPaintTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C3394D418D22A640073F847 /* Debug */,
+				3C3394D518D22A640073F847 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C33949318D22A640073F847 /* Project object */;
+}
