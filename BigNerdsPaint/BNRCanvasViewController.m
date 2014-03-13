@@ -7,8 +7,11 @@
 //
 
 #import "BNRCanvasViewController.h"
+#import "FCColorPickerViewController.h"
 
-@interface BNRCanvasViewController ()
+@interface BNRCanvasViewController () <FCColorPickerViewControllerDelegate>
+
+@property (nonatomic, strong) UIColor *color;
 
 @end
 
@@ -18,7 +21,25 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        
+        UIBarButtonItem *saveBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(saveImage:)];
+        self.navigationItem.rightBarButtonItem=saveBtn;
+        
+        UIBarButtonItem *undoBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemUndo target:self action:@selector(undoButtonClicked:)];
+        
+        self.navigationItem.rightBarButtonItem=undoBtn;
+        
+        UIBarButtonItem *redoBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRedo target:self action:@selector(redoButtonClicked:)];
+        UISwitch *emitterSwitch=[[UISwitch alloc] initWithFrame:CGRectMake(0, 0, 100,50)];
+        UIBarButtonItem *switchBtn=[[UIBarButtonItem alloc] initWithCustomView:emitterSwitch];
+        self.navigationItem.rightBarButtonItem=switchBtn;
+        [emitterSwitch addTarget:self action:@selector(switchEmitter:) forControlEvents:UIControlEventValueChanged];
+        
+        
+        UIBarButtonItem *colorPicker = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self action:@selector(chooseColor:)];
+        
+        self.navigationItem.rightBarButtonItems = @[saveBtn, redoBtn, undoBtn,switchBtn, colorPicker];
+        
     }
     return self;
 }
@@ -26,11 +47,94 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    drawScreen=[[MyLineDrawingView alloc]initWithFrame:CGRectMake(0, 45, 768, 1004)];
+    [drawScreen setBackgroundColor:[UIColor whiteColor]];
+    [self.view addSubview:drawScreen];
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsPath = [paths objectAtIndex:0]; //Get the docs directory
+    NSString *filePath = [documentsPath stringByAppendingPathComponent:[NSString stringWithFormat:@"image%d.png",self.numberInDocs+1]]; //Add the file name
+    NSData *tempData=[NSData dataWithContentsOfFile:filePath];
+    while (tempData.length>0) {
+        self.numberInDocs++;
+        filePath=[documentsPath stringByAppendingPathComponent:[NSString stringWithFormat:@"image%d.png",self.numberInDocs+1]];
+        tempData=[NSData dataWithContentsOfFile:filePath];
+    }
+
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
 }
+-(void)saveImage:(id)sender
+{
+    UIGraphicsBeginImageContext(self.view.bounds.size);
+    [drawScreen.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    NSData *pngData = UIImagePNGRepresentation(image);
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsPath = [paths objectAtIndex:0]; //Get the docs directory
+    NSString *filePath = [documentsPath stringByAppendingPathComponent:[NSString stringWithFormat:@"image%d.png",self.numberInDocs+1]]; //Add the file name
+    [pngData writeToFile:filePath atomically:YES]; //Write the file
+    self.numberInDocs++;
+    NSLog(@"number in docs is %d",self.numberInDocs);
+    //UIImageWriteToSavedPhotosAlbum(image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
 
+}
+-(void)switchEmitter:(id)sender
+{
+    [drawScreen switchEmitter];
+}
+
+- (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo
+{
+    //From DRAWPAD by Ray Wenderlich
+    // Was there an error?
+    if (error != NULL)
+    {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Image could not be saved.Please try again"  delegate:nil cancelButtonTitle:nil otherButtonTitles:@"Close", nil];
+        [alert show];
+    } else {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Success" message:@"Image was successfully saved in photoalbum"  delegate:nil cancelButtonTitle:nil otherButtonTitles:@"Close", nil];
+        [alert show];
+    }
+}
+
+-(IBAction)undoButtonClicked:(id)sender
+{
+    [drawScreen undoButtonClicked];
+    
+}
+
+-(IBAction)redoButtonClicked:(id)sender
+{
+    [drawScreen redoButtonClicked];
+    
+}
+
+
+-(IBAction)chooseColor:(id)sender {
+    FCColorPickerViewController *colorPicker = [FCColorPickerViewController colorPicker];
+    colorPicker.color = self.color;
+    colorPicker.delegate = self;
+    
+    [colorPicker setModalPresentationStyle:UIModalPresentationFormSheet];
+    [self presentViewController:colorPicker animated:YES completion:nil];
+}
+
+#pragma mark - FCColorPickerViewControllerDelegate Methods
+
+-(void)colorPickerViewController:(FCColorPickerViewController *)colorPicker didSelectColor:(UIColor *)color {
+    self.color = color;
+    
+    
+    drawScreen.drawingColor = color;
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+-(void)colorPickerViewControllerDidCancel:(FCColorPickerViewController *)colorPicker {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end

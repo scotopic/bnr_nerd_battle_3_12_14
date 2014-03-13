@@ -25,9 +25,16 @@
 		3C33952518D2316B0073F847 /* BNRGalleryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C33952318D2316B0073F847 /* BNRGalleryViewController.xib */; };
 		3C33952918D231860073F847 /* BNRCanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C33952718D231860073F847 /* BNRCanvasViewController.m */; };
 		3C33952A18D231860073F847 /* BNRCanvasViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C33952818D231860073F847 /* BNRCanvasViewController.xib */; };
-		3CCADEF618D2415F001564E6 /* BNRGalleryLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCADEF518D2415F001564E6 /* BNRGalleryLayout.m */; };
-		3CCADEFC18D24E50001564E6 /* BNRFadeAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCADEFB18D24E50001564E6 /* BNRFadeAnimator.m */; };
-		3CCADEFF18D2514C001564E6 /* BNRGrowAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCADEFE18D2514C001564E6 /* BNRGrowAnimator.m */; };
+		3CCADF0718D25CD2001564E6 /* BNRFadeAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCADF0118D25CD2001564E6 /* BNRFadeAnimator.m */; };
+		3CCADF0818D25CD2001564E6 /* BNRGalleryLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCADF0318D25CD2001564E6 /* BNRGalleryLayout.m */; };
+		E88295E118D24ADC007FDB5D /* DWFParticleView.m in Sources */ = {isa = PBXBuildFile; fileRef = E88295DD18D24ADC007FDB5D /* DWFParticleView.m */; };
+		E88295E218D24ADC007FDB5D /* MyLineDrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = E88295DF18D24ADC007FDB5D /* MyLineDrawingView.m */; };
+		E88295E318D24ADC007FDB5D /* Particles_fire.png in Resources */ = {isa = PBXBuildFile; fileRef = E88295E018D24ADC007FDB5D /* Particles_fire.png */; };
+		E88295ED18D25767007FDB5D /* FCColorPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E88295E618D25767007FDB5D /* FCColorPickerViewController.m */; };
+		E88295EE18D25767007FDB5D /* FCColorPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E88295E718D25767007FDB5D /* FCColorPickerViewController.xib */; };
+		E88295EF18D25767007FDB5D /* FCBrightDarkGradView.m in Sources */ = {isa = PBXBuildFile; fileRef = E88295EA18D25767007FDB5D /* FCBrightDarkGradView.m */; };
+		E88295F018D25767007FDB5D /* FCColorSwatchView.m in Sources */ = {isa = PBXBuildFile; fileRef = E88295EC18D25767007FDB5D /* FCColorSwatchView.m */; };
+		E88295F218D25828007FDB5D /* colormap.png in Resources */ = {isa = PBXBuildFile; fileRef = E88295F118D25828007FDB5D /* colormap.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,12 +72,24 @@
 		3C33952618D231860073F847 /* BNRCanvasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRCanvasViewController.h; sourceTree = "<group>"; };
 		3C33952718D231860073F847 /* BNRCanvasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRCanvasViewController.m; sourceTree = "<group>"; };
 		3C33952818D231860073F847 /* BNRCanvasViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BNRCanvasViewController.xib; sourceTree = "<group>"; };
-		3CCADEF418D2415F001564E6 /* BNRGalleryLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRGalleryLayout.h; sourceTree = "<group>"; };
-		3CCADEF518D2415F001564E6 /* BNRGalleryLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRGalleryLayout.m; sourceTree = "<group>"; };
-		3CCADEFA18D24E50001564E6 /* BNRFadeAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRFadeAnimator.h; sourceTree = "<group>"; };
-		3CCADEFB18D24E50001564E6 /* BNRFadeAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRFadeAnimator.m; sourceTree = "<group>"; };
-		3CCADEFD18D2514C001564E6 /* BNRGrowAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRGrowAnimator.h; sourceTree = "<group>"; };
-		3CCADEFE18D2514C001564E6 /* BNRGrowAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRGrowAnimator.m; sourceTree = "<group>"; };
+		3CCADF0018D25CD2001564E6 /* BNRGrowAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRGrowAnimator.h; sourceTree = "<group>"; };
+		3CCADF0118D25CD2001564E6 /* BNRFadeAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRFadeAnimator.m; sourceTree = "<group>"; };
+		3CCADF0218D25CD2001564E6 /* BNRFadeAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRFadeAnimator.h; sourceTree = "<group>"; };
+		3CCADF0318D25CD2001564E6 /* BNRGalleryLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRGalleryLayout.m; sourceTree = "<group>"; };
+		3CCADF0618D25CD2001564E6 /* BNRGalleryLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRGalleryLayout.h; sourceTree = "<group>"; };
+		E88295DC18D24ADC007FDB5D /* DWFParticleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWFParticleView.h; sourceTree = "<group>"; };
+		E88295DD18D24ADC007FDB5D /* DWFParticleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWFParticleView.m; sourceTree = "<group>"; };
+		E88295DE18D24ADC007FDB5D /* MyLineDrawingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLineDrawingView.h; sourceTree = "<group>"; };
+		E88295DF18D24ADC007FDB5D /* MyLineDrawingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLineDrawingView.m; sourceTree = "<group>"; };
+		E88295E018D24ADC007FDB5D /* Particles_fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Particles_fire.png; sourceTree = "<group>"; };
+		E88295E518D25767007FDB5D /* FCColorPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCColorPickerViewController.h; sourceTree = "<group>"; };
+		E88295E618D25767007FDB5D /* FCColorPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCColorPickerViewController.m; sourceTree = "<group>"; };
+		E88295E718D25767007FDB5D /* FCColorPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FCColorPickerViewController.xib; sourceTree = "<group>"; };
+		E88295E918D25767007FDB5D /* FCBrightDarkGradView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCBrightDarkGradView.h; sourceTree = "<group>"; };
+		E88295EA18D25767007FDB5D /* FCBrightDarkGradView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCBrightDarkGradView.m; sourceTree = "<group>"; };
+		E88295EB18D25767007FDB5D /* FCColorSwatchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCColorSwatchView.h; sourceTree = "<group>"; };
+		E88295EC18D25767007FDB5D /* FCColorSwatchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCColorSwatchView.m; sourceTree = "<group>"; };
+		E88295F118D25828007FDB5D /* colormap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colormap.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,19 +154,24 @@
 				3C33952618D231860073F847 /* BNRCanvasViewController.h */,
 				3C33952718D231860073F847 /* BNRCanvasViewController.m */,
 				3C33952818D231860073F847 /* BNRCanvasViewController.xib */,
-				3CCADEF418D2415F001564E6 /* BNRGalleryLayout.h */,
-				3CCADEF518D2415F001564E6 /* BNRGalleryLayout.m */,
+				3CCADF0218D25CD2001564E6 /* BNRFadeAnimator.h */,
+				3CCADF0118D25CD2001564E6 /* BNRFadeAnimator.m */,
+				3CCADF0618D25CD2001564E6 /* BNRGalleryLayout.h */,
+				3CCADF0318D25CD2001564E6 /* BNRGalleryLayout.m */,
 				3C33952118D2316B0073F847 /* BNRGalleryViewController.h */,
 				3C33952218D2316B0073F847 /* BNRGalleryViewController.m */,
 				3C33952318D2316B0073F847 /* BNRGalleryViewController.xib */,
+				3CCADF0018D25CD2001564E6 /* BNRGrowAnimator.h */,
+				E88295E418D2575B007FDB5D /* color_picker_temp */,
+				E88295DC18D24ADC007FDB5D /* DWFParticleView.h */,
+				E88295DD18D24ADC007FDB5D /* DWFParticleView.m */,
 				3C3394B918D22A640073F847 /* Images.xcassets */,
 				3C3394D618D22A8B0073F847 /* Main_IPad.xib */,
 				3C3394D818D22A9F0073F847 /* Main_iPhone.xib */,
+				E88295DE18D24ADC007FDB5D /* MyLineDrawingView.h */,
+				E88295DF18D24ADC007FDB5D /* MyLineDrawingView.m */,
+				E88295E018D24ADC007FDB5D /* Particles_fire.png */,
 				3C3394A518D22A640073F847 /* Supporting Files */,
-				3CCADEFA18D24E50001564E6 /* BNRFadeAnimator.h */,
-				3CCADEFB18D24E50001564E6 /* BNRFadeAnimator.m */,
-				3CCADEFD18D2514C001564E6 /* BNRGrowAnimator.h */,
-				3CCADEFE18D2514C001564E6 /* BNRGrowAnimator.m */,
 			);
 			path = BigNerdsPaint;
 			sourceTree = "<group>";
@@ -179,6 +203,29 @@
 				3C3394C918D22A640073F847 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E88295E418D2575B007FDB5D /* color_picker_temp */ = {
+			isa = PBXGroup;
+			children = (
+				E88295F118D25828007FDB5D /* colormap.png */,
+				E88295E518D25767007FDB5D /* FCColorPickerViewController.h */,
+				E88295E618D25767007FDB5D /* FCColorPickerViewController.m */,
+				E88295E718D25767007FDB5D /* FCColorPickerViewController.xib */,
+				E88295E818D25767007FDB5D /* Private */,
+			);
+			name = color_picker_temp;
+			sourceTree = "<group>";
+		};
+		E88295E818D25767007FDB5D /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				E88295E918D25767007FDB5D /* FCBrightDarkGradView.h */,
+				E88295EA18D25767007FDB5D /* FCBrightDarkGradView.m */,
+				E88295EB18D25767007FDB5D /* FCColorSwatchView.h */,
+				E88295EC18D25767007FDB5D /* FCColorSwatchView.m */,
+			);
+			path = Private;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,7 +310,10 @@
 				3C3394A918D22A640073F847 /* InfoPlist.strings in Resources */,
 				3C33952518D2316B0073F847 /* BNRGalleryViewController.xib in Resources */,
 				3C3394D918D22A9F0073F847 /* Main_iPhone.xib in Resources */,
+				E88295EE18D25767007FDB5D /* FCColorPickerViewController.xib in Resources */,
+				E88295E318D24ADC007FDB5D /* Particles_fire.png in Resources */,
 				3C33952A18D231860073F847 /* BNRCanvasViewController.xib in Resources */,
+				E88295F218D25828007FDB5D /* colormap.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,13 +332,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CCADEF618D2415F001564E6 /* BNRGalleryLayout.m in Sources */,
 				3C3394AB18D22A640073F847 /* main.m in Sources */,
+				3CCADF0718D25CD2001564E6 /* BNRFadeAnimator.m in Sources */,
+				E88295E218D24ADC007FDB5D /* MyLineDrawingView.m in Sources */,
+				E88295ED18D25767007FDB5D /* FCColorPickerViewController.m in Sources */,
+				E88295E118D24ADC007FDB5D /* DWFParticleView.m in Sources */,
+				E88295F018D25767007FDB5D /* FCColorSwatchView.m in Sources */,
+				3CCADF0818D25CD2001564E6 /* BNRGalleryLayout.m in Sources */,
 				3C3394AF18D22A640073F847 /* BNRAppDelegate.m in Sources */,
+				E88295EF18D25767007FDB5D /* FCBrightDarkGradView.m in Sources */,
 				3C33952418D2316B0073F847 /* BNRGalleryViewController.m in Sources */,
 				3C33952918D231860073F847 /* BNRCanvasViewController.m in Sources */,
-				3CCADEFC18D24E50001564E6 /* BNRFadeAnimator.m in Sources */,
-				3CCADEFF18D2514C001564E6 /* BNRGrowAnimator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
