@@ -25,6 +25,9 @@
 		3C33952518D2316B0073F847 /* BNRGalleryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C33952318D2316B0073F847 /* BNRGalleryViewController.xib */; };
 		3C33952918D231860073F847 /* BNRCanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C33952718D231860073F847 /* BNRCanvasViewController.m */; };
 		3C33952A18D231860073F847 /* BNRCanvasViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C33952818D231860073F847 /* BNRCanvasViewController.xib */; };
+		E88295E118D24ADC007FDB5D /* DWFParticleView.m in Sources */ = {isa = PBXBuildFile; fileRef = E88295DD18D24ADC007FDB5D /* DWFParticleView.m */; };
+		E88295E218D24ADC007FDB5D /* MyLineDrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = E88295DF18D24ADC007FDB5D /* MyLineDrawingView.m */; };
+		E88295E318D24ADC007FDB5D /* Particles_fire.png in Resources */ = {isa = PBXBuildFile; fileRef = E88295E018D24ADC007FDB5D /* Particles_fire.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,11 @@
 		3C33952618D231860073F847 /* BNRCanvasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRCanvasViewController.h; sourceTree = "<group>"; };
 		3C33952718D231860073F847 /* BNRCanvasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRCanvasViewController.m; sourceTree = "<group>"; };
 		3C33952818D231860073F847 /* BNRCanvasViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BNRCanvasViewController.xib; sourceTree = "<group>"; };
+		E88295DC18D24ADC007FDB5D /* DWFParticleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWFParticleView.h; sourceTree = "<group>"; };
+		E88295DD18D24ADC007FDB5D /* DWFParticleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWFParticleView.m; sourceTree = "<group>"; };
+		E88295DE18D24ADC007FDB5D /* MyLineDrawingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLineDrawingView.h; sourceTree = "<group>"; };
+		E88295DF18D24ADC007FDB5D /* MyLineDrawingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLineDrawingView.m; sourceTree = "<group>"; };
+		E88295E018D24ADC007FDB5D /* Particles_fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Particles_fire.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +129,11 @@
 		3C3394A418D22A640073F847 /* BigNerdsPaint */ = {
 			isa = PBXGroup;
 			children = (
+				E88295DC18D24ADC007FDB5D /* DWFParticleView.h */,
+				E88295DD18D24ADC007FDB5D /* DWFParticleView.m */,
+				E88295DE18D24ADC007FDB5D /* MyLineDrawingView.h */,
+				E88295DF18D24ADC007FDB5D /* MyLineDrawingView.m */,
+				E88295E018D24ADC007FDB5D /* Particles_fire.png */,
 				3C3394AD18D22A640073F847 /* BNRAppDelegate.h */,
 				3C3394AE18D22A640073F847 /* BNRAppDelegate.m */,
 				3C33952618D231860073F847 /* BNRCanvasViewController.h */,
@@ -248,6 +261,7 @@
 				3C3394A918D22A640073F847 /* InfoPlist.strings in Resources */,
 				3C33952518D2316B0073F847 /* BNRGalleryViewController.xib in Resources */,
 				3C3394D918D22A9F0073F847 /* Main_iPhone.xib in Resources */,
+				E88295E318D24ADC007FDB5D /* Particles_fire.png in Resources */,
 				3C33952A18D231860073F847 /* BNRCanvasViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +282,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C3394AB18D22A640073F847 /* main.m in Sources */,
+				E88295E218D24ADC007FDB5D /* MyLineDrawingView.m in Sources */,
+				E88295E118D24ADC007FDB5D /* DWFParticleView.m in Sources */,
 				3C3394AF18D22A640073F847 /* BNRAppDelegate.m in Sources */,
 				3C33952418D2316B0073F847 /* BNRGalleryViewController.m in Sources */,
 				3C33952918D231860073F847 /* BNRCanvasViewController.m in Sources */,
@@ -473,6 +489,7 @@
 				3C3394D218D22A640073F847 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3C3394D318D22A640073F847 /* Build configuration list for PBXNativeTarget "BigNerdsPaintTests" */ = {
 			isa = XCConfigurationList;
@@ -481,6 +498,7 @@
 				3C3394D518D22A640073F847 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

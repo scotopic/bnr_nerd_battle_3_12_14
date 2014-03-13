@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MyLineDrawingView.h"
 
-@interface BNRCanvasViewController : UIViewController
+@interface BNRCanvasViewController : UIViewController {
+        MyLineDrawingView *drawScreen;
+}
 
 @end
