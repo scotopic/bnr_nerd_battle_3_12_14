@@ -27,8 +27,13 @@
         self.navigationItem.rightBarButtonItem=undoBtn;
         
         UIBarButtonItem *redoBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRedo target:self action:@selector(redoButtonClicked:)];
+        UISwitch *emitterSwitch=[[UISwitch alloc] initWithFrame:CGRectMake(0, 0, 100,50)];
+        UIBarButtonItem *switchBtn=[[UIBarButtonItem alloc] initWithCustomView:emitterSwitch];
+        self.navigationItem.rightBarButtonItem=switchBtn;
+        [emitterSwitch addTarget:self action:@selector(switchEmitter:) forControlEvents:UIControlEventValueChanged];
+        self.navigationItem.rightBarButtonItems = @[saveBtn, redoBtn, undoBtn,switchBtn];
         
-        self.navigationItem.rightBarButtonItems = @[saveBtn, redoBtn, undoBtn];
+        
 
     }
     return self;
@@ -56,6 +61,10 @@
     UIGraphicsEndImageContext();
     UIImageWriteToSavedPhotosAlbum(image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
 
+}
+-(void)switchEmitter:(id)sender
+{
+    [drawScreen switchEmitter];
 }
 - (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo
 {
