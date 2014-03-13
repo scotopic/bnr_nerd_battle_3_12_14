@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2E2EA14218D25D690035C570 /* BNRGrowAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2EA14118D25D690035C570 /* BNRGrowAnimator.m */; };
+		2E2EA14618D25F9B0035C570 /* SmokeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2EA14418D25F9B0035C570 /* SmokeView.m */; };
+		2E2EA14918D2601D0035C570 /* SmokeParticle.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E2EA14818D2601D0035C570 /* SmokeParticle.png */; };
 		3C33949F18D22A640073F847 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C33949E18D22A640073F847 /* Foundation.framework */; };
 		3C3394A118D22A640073F847 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3394A018D22A640073F847 /* CoreGraphics.framework */; };
 		3C3394A318D22A640073F847 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3394A218D22A640073F847 /* UIKit.framework */; };
@@ -51,6 +52,9 @@
 
 /* Begin PBXFileReference section */
 		2E2EA14118D25D690035C570 /* BNRGrowAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRGrowAnimator.m; sourceTree = "<group>"; };
+		2E2EA14318D25F9B0035C570 /* SmokeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmokeView.h; sourceTree = "<group>"; };
+		2E2EA14418D25F9B0035C570 /* SmokeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmokeView.m; sourceTree = "<group>"; };
+		2E2EA14818D2601D0035C570 /* SmokeParticle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SmokeParticle.png; sourceTree = "<group>"; };
 		3C33949B18D22A640073F847 /* BigNerdsPaint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigNerdsPaint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C33949E18D22A640073F847 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3C3394A018D22A640073F847 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -153,6 +157,9 @@
 		3C3394A418D22A640073F847 /* BigNerdsPaint */ = {
 			isa = PBXGroup;
 			children = (
+				2E2EA14818D2601D0035C570 /* SmokeParticle.png */,
+				2E2EA14318D25F9B0035C570 /* SmokeView.h */,
+				2E2EA14418D25F9B0035C570 /* SmokeView.m */,
 				2E2EA14118D25D690035C570 /* BNRGrowAnimator.m */,
 				3C3394AD18D22A640073F847 /* BNRAppDelegate.h */,
 				3C3394AE18D22A640073F847 /* BNRAppDelegate.m */,
@@ -314,6 +321,7 @@
 				3C3394D718D22A8B0073F847 /* Main_IPad.xib in Resources */,
 				3C3394BA18D22A640073F847 /* Images.xcassets in Resources */,
 				3C3394A918D22A640073F847 /* InfoPlist.strings in Resources */,
+				2E2EA14918D2601D0035C570 /* SmokeParticle.png in Resources */,
 				3C33952518D2316B0073F847 /* BNRGalleryViewController.xib in Resources */,
 				3C3394D918D22A9F0073F847 /* Main_iPhone.xib in Resources */,
 				E88295EE18D25767007FDB5D /* FCColorPickerViewController.xib in Resources */,
@@ -342,10 +350,11 @@
 				3CCADF0718D25CD2001564E6 /* BNRFadeAnimator.m in Sources */,
 				E88295E218D24ADC007FDB5D /* MyLineDrawingView.m in Sources */,
 				E88295ED18D25767007FDB5D /* FCColorPickerViewController.m in Sources */,
-				2E2EA14218D25D690035C570 /* BNRGrowAnimator.m in Sources */,
+				E88295F418D25D29007FDB5D /* BNRGrowAnimator.m in Sources */,
 				E88295E118D24ADC007FDB5D /* DWFParticleView.m in Sources */,
 				E88295F018D25767007FDB5D /* FCColorSwatchView.m in Sources */,
 				3CCADF0818D25CD2001564E6 /* BNRGalleryLayout.m in Sources */,
+				2E2EA14618D25F9B0035C570 /* SmokeView.m in Sources */,
 				3C3394AF18D22A640073F847 /* BNRAppDelegate.m in Sources */,
 				E88295EF18D25767007FDB5D /* FCBrightDarkGradView.m in Sources */,
 				3C33952418D2316B0073F847 /* BNRGalleryViewController.m in Sources */,

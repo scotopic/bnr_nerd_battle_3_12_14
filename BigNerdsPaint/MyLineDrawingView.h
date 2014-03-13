@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "DWFParticleView.h"
+#import "SmokeView.h"
 
 @interface MyLineDrawingView : UIView {
  
@@ -19,6 +20,7 @@
 }
 @property(nonatomic,assign) NSInteger undoSteps;
 @property(nonatomic, strong) DWFParticleView* fireView;
+@property(nonatomic, strong) SmokeView *smokeView;
 @property(nonatomic, strong) UIColor *drawingColor;
 
 -(void)undoButtonClicked;

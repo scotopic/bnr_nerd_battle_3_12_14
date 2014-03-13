@@ -24,9 +24,9 @@
         bufferArray=[[NSMutableArray alloc]init];
         
         self.fireView = [[DWFParticleView alloc] initWithFrame:frame];
-        
+        self.smokeView=[[SmokeView alloc] initWithFrame:frame];
         [self addSubview:self.fireView];
-        
+        [self addSubview:self.smokeView];
     }
     return self;
 }
@@ -62,6 +62,8 @@
     
     [pathArray addObject:myPath];
     if (emitterIsOn) {
+        [self.smokeView setEmitterPositionFromTouch:[touches anyObject]];
+        [self.smokeView setIsEmitting:YES];
         [self.fireView setEmitterPositionFromTouch:[touches anyObject]];
         [self.fireView setIsEmitting:YES];
     }
@@ -74,6 +76,7 @@
     UITouch *mytouch=[[touches allObjects] objectAtIndex:0];
     [myPath addLineToPoint:[mytouch locationInView:self]];
     if (emitterIsOn) {
+        [self.smokeView setEmitterPositionFromTouch:[touches anyObject]];
         [self.fireView setEmitterPositionFromTouch: [touches anyObject]];
     }
     
@@ -81,11 +84,13 @@
 }
 -(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
+    [self.smokeView setIsEmitting:NO];
     [self.fireView setIsEmitting:NO];
     
 }
 
 - (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
+    [self.smokeView setIsEmitting:NO];
     [self.fireView setIsEmitting:NO];
 }
 -(void)switchEmitter{
