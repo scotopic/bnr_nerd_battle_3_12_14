@@ -47,9 +47,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    drawScreen=[[MyLineDrawingView alloc]initWithFrame:CGRectMake(0, 45, 768, 1004)];
-    [drawScreen setBackgroundColor:[UIColor whiteColor]];
-    [self.view addSubview:drawScreen];
+    drawScreen=[[MyLineDrawingView alloc]init];
+    [drawScreen setBackgroundColor:[UIColor clearColor]];
     
 }
 -(void)setNumberInDocs:(int)numberInDocs{
