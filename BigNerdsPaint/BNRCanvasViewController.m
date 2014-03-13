@@ -19,6 +19,8 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        UIBarButtonItem *saveBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(saveImage:)];
+        self.navigationItem.rightBarButtonItem=saveBtn;
     }
     return self;
 }
@@ -53,7 +55,10 @@
 {
     [super didReceiveMemoryWarning];
 }
-
+-(void)saveImage:(id)sender
+{
+    NSLog(@"check");
+}
 
 -(IBAction)undoButtonClicked:(id)sender
 {
