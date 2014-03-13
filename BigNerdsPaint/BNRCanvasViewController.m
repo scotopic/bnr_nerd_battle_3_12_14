@@ -71,6 +71,7 @@
 {
     [drawScreen switchEmitter];
 }
+
 - (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo
 {
     //From DRAWPAD by Ray Wenderlich
@@ -112,6 +113,8 @@
 -(void)colorPickerViewController:(FCColorPickerViewController *)colorPicker didSelectColor:(UIColor *)color {
     self.color = color;
     
+    
+    drawScreen.drawingColor = color;
     
     [self dismissViewControllerAnimated:YES completion:nil];
 }
