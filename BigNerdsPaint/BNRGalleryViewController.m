@@ -40,7 +40,7 @@
 - (void) viewDidLoad
 {
     [super viewDidLoad];
-    self.collectionView.backgroundColor = [UIColor whiteColor];
+//    self.collectionView.backgroundColor = [UIColor whiteColor];
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"gridCell"];
     self.title = @"Big Nerd Gallery";
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(handleNewPainting:)];

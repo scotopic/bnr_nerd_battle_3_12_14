@@ -47,8 +47,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    drawScreen=[[MyLineDrawingView alloc]initWithFrame:CGRectMake(0, 45, 768, 1004)];
-    [drawScreen setBackgroundColor:[UIColor whiteColor]];
+    drawScreen=[[MyLineDrawingView alloc]initWithFrame:self.view.bounds];
+    [drawScreen setBackgroundColor:[UIColor clearColor]];
     [self.view addSubview:drawScreen];
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsPath = [paths objectAtIndex:0]; //Get the docs directory
