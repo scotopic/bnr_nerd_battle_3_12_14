@@ -18,9 +18,17 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        
         UIBarButtonItem *saveBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(saveImage:)];
         self.navigationItem.rightBarButtonItem=saveBtn;
+        
+        UIBarButtonItem *undoBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemUndo target:self action:@selector(undoButtonClicked:)];
+        
+        self.navigationItem.rightBarButtonItem=undoBtn;
+        
+        UIBarButtonItem *redoBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRedo target:self action:@selector(redoButtonClicked:)];
+        
+        self.navigationItem.rightBarButtonItems = @[saveBtn, redoBtn, undoBtn];
     }
     return self;
 }
@@ -32,23 +40,6 @@
     drawScreen=[[MyLineDrawingView alloc]initWithFrame:CGRectMake(0, 45, 768, 1004)];
     [drawScreen setBackgroundColor:[UIColor whiteColor]];
     [self.view addSubview:drawScreen];
-    
-    
-    UIButton *undoButton=[UIButton  buttonWithType:UIButtonTypeCustom];
-    [undoButton setTitle:@"UNDO" forState:UIControlStateNormal];
-    [undoButton setBackgroundColor:[UIColor blackColor]];
-    undoButton.frame=CGRectMake(self.view.center.x, self.view.center.y, 100, 40);
-    [undoButton addTarget:self action:@selector(undoButtonClicked:) forControlEvents:UIControlEventTouchDown];
-    [self.view addSubview:undoButton];
-    
-    
-    UIButton *redoButton=[UIButton  buttonWithType:UIButtonTypeCustom];
-    [redoButton setTitle:@"REDO" forState:UIControlStateNormal];
-    [redoButton setBackgroundColor:[UIColor blackColor]];
-    redoButton.frame=CGRectMake(self.view.center.x+120.0, self.view.center.y, 100, 40);
-    [redoButton addTarget:self action:@selector(redoButtonClicked:) forControlEvents:UIControlEventTouchDown];
-    [self.view addSubview:redoButton];
-
 }
 
 - (void)didReceiveMemoryWarning
