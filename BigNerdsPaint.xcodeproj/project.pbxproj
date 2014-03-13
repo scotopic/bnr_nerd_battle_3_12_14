@@ -25,6 +25,9 @@
 		3C33952518D2316B0073F847 /* BNRGalleryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C33952318D2316B0073F847 /* BNRGalleryViewController.xib */; };
 		3C33952918D231860073F847 /* BNRCanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C33952718D231860073F847 /* BNRCanvasViewController.m */; };
 		3C33952A18D231860073F847 /* BNRCanvasViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C33952818D231860073F847 /* BNRCanvasViewController.xib */; };
+		3CCADEF618D2415F001564E6 /* BNRGalleryLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCADEF518D2415F001564E6 /* BNRGalleryLayout.m */; };
+		3CCADEFC18D24E50001564E6 /* BNRFadeAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCADEFB18D24E50001564E6 /* BNRFadeAnimator.m */; };
+		3CCADEFF18D2514C001564E6 /* BNRGrowAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCADEFE18D2514C001564E6 /* BNRGrowAnimator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,12 @@
 		3C33952618D231860073F847 /* BNRCanvasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRCanvasViewController.h; sourceTree = "<group>"; };
 		3C33952718D231860073F847 /* BNRCanvasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRCanvasViewController.m; sourceTree = "<group>"; };
 		3C33952818D231860073F847 /* BNRCanvasViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BNRCanvasViewController.xib; sourceTree = "<group>"; };
+		3CCADEF418D2415F001564E6 /* BNRGalleryLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRGalleryLayout.h; sourceTree = "<group>"; };
+		3CCADEF518D2415F001564E6 /* BNRGalleryLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRGalleryLayout.m; sourceTree = "<group>"; };
+		3CCADEFA18D24E50001564E6 /* BNRFadeAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRFadeAnimator.h; sourceTree = "<group>"; };
+		3CCADEFB18D24E50001564E6 /* BNRFadeAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRFadeAnimator.m; sourceTree = "<group>"; };
+		3CCADEFD18D2514C001564E6 /* BNRGrowAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRGrowAnimator.h; sourceTree = "<group>"; };
+		3CCADEFE18D2514C001564E6 /* BNRGrowAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRGrowAnimator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +135,8 @@
 				3C33952618D231860073F847 /* BNRCanvasViewController.h */,
 				3C33952718D231860073F847 /* BNRCanvasViewController.m */,
 				3C33952818D231860073F847 /* BNRCanvasViewController.xib */,
+				3CCADEF418D2415F001564E6 /* BNRGalleryLayout.h */,
+				3CCADEF518D2415F001564E6 /* BNRGalleryLayout.m */,
 				3C33952118D2316B0073F847 /* BNRGalleryViewController.h */,
 				3C33952218D2316B0073F847 /* BNRGalleryViewController.m */,
 				3C33952318D2316B0073F847 /* BNRGalleryViewController.xib */,
@@ -133,6 +144,10 @@
 				3C3394D618D22A8B0073F847 /* Main_IPad.xib */,
 				3C3394D818D22A9F0073F847 /* Main_iPhone.xib */,
 				3C3394A518D22A640073F847 /* Supporting Files */,
+				3CCADEFA18D24E50001564E6 /* BNRFadeAnimator.h */,
+				3CCADEFB18D24E50001564E6 /* BNRFadeAnimator.m */,
+				3CCADEFD18D2514C001564E6 /* BNRGrowAnimator.h */,
+				3CCADEFE18D2514C001564E6 /* BNRGrowAnimator.m */,
 			);
 			path = BigNerdsPaint;
 			sourceTree = "<group>";
@@ -267,10 +282,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CCADEF618D2415F001564E6 /* BNRGalleryLayout.m in Sources */,
 				3C3394AB18D22A640073F847 /* main.m in Sources */,
 				3C3394AF18D22A640073F847 /* BNRAppDelegate.m in Sources */,
 				3C33952418D2316B0073F847 /* BNRGalleryViewController.m in Sources */,
 				3C33952918D231860073F847 /* BNRCanvasViewController.m in Sources */,
+				3CCADEFC18D24E50001564E6 /* BNRFadeAnimator.m in Sources */,
+				3CCADEFF18D2514C001564E6 /* BNRGrowAnimator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +491,7 @@
 				3C3394D218D22A640073F847 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3C3394D318D22A640073F847 /* Build configuration list for PBXNativeTarget "BigNerdsPaintTests" */ = {
 			isa = XCConfigurationList;
@@ -481,6 +500,7 @@
 				3C3394D518D22A640073F847 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
