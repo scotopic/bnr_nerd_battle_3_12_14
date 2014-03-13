@@ -57,9 +57,11 @@
     // attach CGPath to UIbezierPath
     
     [pathArray addObject:myPath];
+    if (emitterIsOn) {
+        [self.fireView setEmitterPositionFromTouch:[touches anyObject]];
+        [self.fireView setIsEmitting:YES];
+    }
     
-    [self.fireView setEmitterPositionFromTouch:[touches anyObject]];
-    [self.fireView setIsEmitting:YES];
     
 }
 -(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
@@ -67,9 +69,9 @@
     
     UITouch *mytouch=[[touches allObjects] objectAtIndex:0];
     [myPath addLineToPoint:[mytouch locationInView:self]];
-    
-    [self.fireView setEmitterPositionFromTouch: [touches anyObject]];
-    
+    if (emitterIsOn) {
+        [self.fireView setEmitterPositionFromTouch: [touches anyObject]];
+    }
     
     [self setNeedsDisplay];
 }
@@ -82,7 +84,9 @@
 - (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
     [self.fireView setIsEmitting:NO];
 }
-
+-(void)switchEmitter{
+    emitterIsOn=!emitterIsOn;
+}
 -(void)undoButtonClicked
 {
     

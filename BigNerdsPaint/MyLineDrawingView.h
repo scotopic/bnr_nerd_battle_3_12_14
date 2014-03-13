@@ -14,6 +14,7 @@
     NSMutableArray *pathArray;
     NSMutableArray *bufferArray;
     UIBezierPath *myPath;
+    BOOL emitterIsOn;
 
 }
 @property(nonatomic,assign) NSInteger undoSteps;
@@ -21,4 +22,5 @@
 
 -(void)undoButtonClicked;
 -(void)redoButtonClicked;
+-(void)switchEmitter;
 @end
