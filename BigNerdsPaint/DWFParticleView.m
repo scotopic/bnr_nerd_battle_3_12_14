@@ -43,7 +43,7 @@
     fireEmitter = (CAEmitterLayer*)self.layer; //2
     //configure the emitter layer
     fireEmitter.emitterPosition = CGPointMake(50, 50);
-    fireEmitter.emitterSize = CGSizeMake(10, 10);
+    fireEmitter.emitterSize = CGSizeMake(70, 70);
     
     CAEmitterCell* fire = [CAEmitterCell emitterCell];
     fire.birthRate = 0;
