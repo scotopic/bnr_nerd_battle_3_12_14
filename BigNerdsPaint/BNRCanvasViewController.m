@@ -56,6 +56,14 @@
     _numberInDocs=[[NSUserDefaults standardUserDefaults] integerForKey:@"numberInDocs"];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    drawScreen.frame = self.view.bounds;
+
+    [self.view addSubview:drawScreen];
+    
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

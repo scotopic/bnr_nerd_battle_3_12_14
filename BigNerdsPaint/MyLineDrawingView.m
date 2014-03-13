@@ -40,7 +40,12 @@
 //    [[UIColor redColor] setStroke];
 //    [[self.drawingColor] setStroke];
     
-    [self.drawingColor setStroke];
+    if (self.drawingColor) {
+        [self.drawingColor setStroke];
+    } else {
+      [[UIColor whiteColor] setStroke];
+    }
+    
     
     for (UIBezierPath *_path in pathArray) {
         [_path strokeWithBlendMode:kCGBlendModeNormal alpha:1.0];
