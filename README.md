@@ -27,6 +27,3 @@ bnr_nerd_battle_3_12_14
  1. https://help.github.com/articles/github-flavored-markdown
  2. https://help.github.com/articles/markdown-basics
  3. http://dillinger.io/
-
-
-
