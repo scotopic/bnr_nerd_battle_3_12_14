@@ -28,6 +28,11 @@
 		E88295E118D24ADC007FDB5D /* DWFParticleView.m in Sources */ = {isa = PBXBuildFile; fileRef = E88295DD18D24ADC007FDB5D /* DWFParticleView.m */; };
 		E88295E218D24ADC007FDB5D /* MyLineDrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = E88295DF18D24ADC007FDB5D /* MyLineDrawingView.m */; };
 		E88295E318D24ADC007FDB5D /* Particles_fire.png in Resources */ = {isa = PBXBuildFile; fileRef = E88295E018D24ADC007FDB5D /* Particles_fire.png */; };
+		E88295ED18D25767007FDB5D /* FCColorPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E88295E618D25767007FDB5D /* FCColorPickerViewController.m */; };
+		E88295EE18D25767007FDB5D /* FCColorPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E88295E718D25767007FDB5D /* FCColorPickerViewController.xib */; };
+		E88295EF18D25767007FDB5D /* FCBrightDarkGradView.m in Sources */ = {isa = PBXBuildFile; fileRef = E88295EA18D25767007FDB5D /* FCBrightDarkGradView.m */; };
+		E88295F018D25767007FDB5D /* FCColorSwatchView.m in Sources */ = {isa = PBXBuildFile; fileRef = E88295EC18D25767007FDB5D /* FCColorSwatchView.m */; };
+		E88295F218D25828007FDB5D /* colormap.png in Resources */ = {isa = PBXBuildFile; fileRef = E88295F118D25828007FDB5D /* colormap.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +75,14 @@
 		E88295DE18D24ADC007FDB5D /* MyLineDrawingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLineDrawingView.h; sourceTree = "<group>"; };
 		E88295DF18D24ADC007FDB5D /* MyLineDrawingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLineDrawingView.m; sourceTree = "<group>"; };
 		E88295E018D24ADC007FDB5D /* Particles_fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Particles_fire.png; sourceTree = "<group>"; };
+		E88295E518D25767007FDB5D /* FCColorPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCColorPickerViewController.h; sourceTree = "<group>"; };
+		E88295E618D25767007FDB5D /* FCColorPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCColorPickerViewController.m; sourceTree = "<group>"; };
+		E88295E718D25767007FDB5D /* FCColorPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FCColorPickerViewController.xib; sourceTree = "<group>"; };
+		E88295E918D25767007FDB5D /* FCBrightDarkGradView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCBrightDarkGradView.h; sourceTree = "<group>"; };
+		E88295EA18D25767007FDB5D /* FCBrightDarkGradView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCBrightDarkGradView.m; sourceTree = "<group>"; };
+		E88295EB18D25767007FDB5D /* FCColorSwatchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCColorSwatchView.h; sourceTree = "<group>"; };
+		E88295EC18D25767007FDB5D /* FCColorSwatchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCColorSwatchView.m; sourceTree = "<group>"; };
+		E88295F118D25828007FDB5D /* colormap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colormap.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +142,7 @@
 		3C3394A418D22A640073F847 /* BigNerdsPaint */ = {
 			isa = PBXGroup;
 			children = (
+				E88295E418D2575B007FDB5D /* color_picker_temp */,
 				E88295DC18D24ADC007FDB5D /* DWFParticleView.h */,
 				E88295DD18D24ADC007FDB5D /* DWFParticleView.m */,
 				E88295DE18D24ADC007FDB5D /* MyLineDrawingView.h */,
@@ -177,6 +191,29 @@
 				3C3394C918D22A640073F847 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E88295E418D2575B007FDB5D /* color_picker_temp */ = {
+			isa = PBXGroup;
+			children = (
+				E88295F118D25828007FDB5D /* colormap.png */,
+				E88295E518D25767007FDB5D /* FCColorPickerViewController.h */,
+				E88295E618D25767007FDB5D /* FCColorPickerViewController.m */,
+				E88295E718D25767007FDB5D /* FCColorPickerViewController.xib */,
+				E88295E818D25767007FDB5D /* Private */,
+			);
+			name = color_picker_temp;
+			sourceTree = "<group>";
+		};
+		E88295E818D25767007FDB5D /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				E88295E918D25767007FDB5D /* FCBrightDarkGradView.h */,
+				E88295EA18D25767007FDB5D /* FCBrightDarkGradView.m */,
+				E88295EB18D25767007FDB5D /* FCColorSwatchView.h */,
+				E88295EC18D25767007FDB5D /* FCColorSwatchView.m */,
+			);
+			path = Private;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,8 +298,10 @@
 				3C3394A918D22A640073F847 /* InfoPlist.strings in Resources */,
 				3C33952518D2316B0073F847 /* BNRGalleryViewController.xib in Resources */,
 				3C3394D918D22A9F0073F847 /* Main_iPhone.xib in Resources */,
+				E88295EE18D25767007FDB5D /* FCColorPickerViewController.xib in Resources */,
 				E88295E318D24ADC007FDB5D /* Particles_fire.png in Resources */,
 				3C33952A18D231860073F847 /* BNRCanvasViewController.xib in Resources */,
+				E88295F218D25828007FDB5D /* colormap.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,8 +322,11 @@
 			files = (
 				3C3394AB18D22A640073F847 /* main.m in Sources */,
 				E88295E218D24ADC007FDB5D /* MyLineDrawingView.m in Sources */,
+				E88295ED18D25767007FDB5D /* FCColorPickerViewController.m in Sources */,
 				E88295E118D24ADC007FDB5D /* DWFParticleView.m in Sources */,
+				E88295F018D25767007FDB5D /* FCColorSwatchView.m in Sources */,
 				3C3394AF18D22A640073F847 /* BNRAppDelegate.m in Sources */,
+				E88295EF18D25767007FDB5D /* FCBrightDarkGradView.m in Sources */,
 				3C33952418D2316B0073F847 /* BNRGalleryViewController.m in Sources */,
 				3C33952918D231860073F847 /* BNRCanvasViewController.m in Sources */,
 			);

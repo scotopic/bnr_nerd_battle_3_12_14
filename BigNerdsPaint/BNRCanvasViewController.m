@@ -7,8 +7,11 @@
 //
 
 #import "BNRCanvasViewController.h"
+#import "FCColorPickerViewController.h"
 
-@interface BNRCanvasViewController ()
+@interface BNRCanvasViewController () <FCColorPickerViewControllerDelegate>
+
+@property (nonatomic, strong) UIColor *color;
 
 @end
 
@@ -28,8 +31,10 @@
         
         UIBarButtonItem *redoBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRedo target:self action:@selector(redoButtonClicked:)];
         
-        self.navigationItem.rightBarButtonItems = @[saveBtn, redoBtn, undoBtn];
-
+        UIBarButtonItem *colorPicker = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self action:@selector(chooseColor:)];
+        
+        self.navigationItem.rightBarButtonItems = @[colorPicker, saveBtn, redoBtn, undoBtn];
+//
     }
     return self;
 }
@@ -84,4 +89,25 @@
 }
 
 
+-(IBAction)chooseColor:(id)sender {
+    FCColorPickerViewController *colorPicker = [FCColorPickerViewController colorPicker];
+    colorPicker.color = self.color;
+    colorPicker.delegate = self;
+    
+    [colorPicker setModalPresentationStyle:UIModalPresentationFormSheet];
+    [self presentViewController:colorPicker animated:YES completion:nil];
+}
+
+#pragma mark - FCColorPickerViewControllerDelegate Methods
+
+-(void)colorPickerViewController:(FCColorPickerViewController *)colorPicker didSelectColor:(UIColor *)color {
+    self.color = color;
+    
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+-(void)colorPickerViewControllerDidCancel:(FCColorPickerViewController *)colorPicker {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end
