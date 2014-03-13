@@ -8,6 +8,14 @@
 
 #import "MyLineDrawingView.h"
 
+@interface MyPath : UIBezierPath
+@property (nonatomic, copy) UIColor* myColor;
+@end
+
+@implementation MyPath
+
+@end
+
 
 @implementation MyLineDrawingView
 @synthesize undoSteps;
@@ -40,25 +48,28 @@
 //    [[UIColor redColor] setStroke];
 //    [[self.drawingColor] setStroke];
     
-    if (self.drawingColor) {
-        [self.drawingColor setStroke];
-    } else {
-      [[UIColor whiteColor] setStroke];
-    }
+
     
-    
-    for (UIBezierPath *_path in pathArray) {
+    for (MyPath *_path in pathArray) {
+        [_path.myColor setStroke];
         [_path strokeWithBlendMode:kCGBlendModeNormal alpha:1.0];
     }
 
+    if (self.drawingColor) {
+        [self.drawingColor setStroke];
+    } else {
+        [[UIColor whiteColor] setStroke];
+    }
+    
 
 }
 
 #pragma mark - Touch Methods
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    myPath=[[UIBezierPath alloc]init];
+    myPath=[[MyPath alloc]init];
     myPath.lineWidth=10;
+    myPath.myColor = self.drawingColor;
     
     UITouch *mytouch=[[touches allObjects] objectAtIndex:0];
     [myPath moveToPoint:[mytouch locationInView:self]];

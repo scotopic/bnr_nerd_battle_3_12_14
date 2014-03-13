@@ -9,12 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "DWFParticleView.h"
 #import "SmokeView.h"
+@class MyPath;
 
 @interface MyLineDrawingView : UIView {
  
     NSMutableArray *pathArray;
     NSMutableArray *bufferArray;
-    UIBezierPath *myPath;
+    MyPath *myPath;
     BOOL emitterIsOn;
 
 }
