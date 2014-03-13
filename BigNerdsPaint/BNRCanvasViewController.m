@@ -47,9 +47,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    drawScreen=[[MyLineDrawingView alloc]initWithFrame:CGRectMake(0, 45, 768, 1004)];
-    [drawScreen setBackgroundColor:[UIColor whiteColor]];
-    [self.view addSubview:drawScreen];
+    drawScreen=[[MyLineDrawingView alloc] init];
+    [drawScreen setBackgroundColor:[UIColor clearColor]];
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsPath = [paths objectAtIndex:0]; //Get the docs directory
     NSString *filePath = [documentsPath stringByAppendingPathComponent:[NSString stringWithFormat:@"image%d.png",self.numberInDocs+1]]; //Add the file name
@@ -60,6 +59,14 @@
         tempData=[NSData dataWithContentsOfFile:filePath];
     }
 
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    drawScreen.frame = self.view.bounds;
+
+    [self.view addSubview:drawScreen];
+    
 }
 
 - (void)didReceiveMemoryWarning
