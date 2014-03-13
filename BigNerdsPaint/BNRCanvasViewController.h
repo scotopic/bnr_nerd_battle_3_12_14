@@ -12,5 +12,5 @@
 @interface BNRCanvasViewController : UIViewController {
         MyLineDrawingView *drawScreen;
 }
-
+@property (nonatomic, assign)int numberInDocs;
 @end

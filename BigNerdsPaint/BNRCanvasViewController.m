@@ -47,10 +47,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
     drawScreen=[[MyLineDrawingView alloc]initWithFrame:CGRectMake(0, 45, 768, 1004)];
     [drawScreen setBackgroundColor:[UIColor whiteColor]];
     [self.view addSubview:drawScreen];
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsPath = [paths objectAtIndex:0]; //Get the docs directory
+    NSString *filePath = [documentsPath stringByAppendingPathComponent:[NSString stringWithFormat:@"image%d.png",self.numberInDocs+1]]; //Add the file name
+    NSData *tempData=[NSData dataWithContentsOfFile:filePath];
+    while (tempData.length>0) {
+        self.numberInDocs++;
+        filePath=[documentsPath stringByAppendingPathComponent:[NSString stringWithFormat:@"image%d.png",self.numberInDocs+1]];
+        tempData=[NSData dataWithContentsOfFile:filePath];
+    }
 
 }
 
@@ -64,7 +72,14 @@
     [drawScreen.layer renderInContext:UIGraphicsGetCurrentContext()];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-    UIImageWriteToSavedPhotosAlbum(image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
+    NSData *pngData = UIImagePNGRepresentation(image);
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsPath = [paths objectAtIndex:0]; //Get the docs directory
+    NSString *filePath = [documentsPath stringByAppendingPathComponent:[NSString stringWithFormat:@"image%d.png",self.numberInDocs+1]]; //Add the file name
+    [pngData writeToFile:filePath atomically:YES]; //Write the file
+    self.numberInDocs++;
+    NSLog(@"number in docs is %d",self.numberInDocs);
+    //UIImageWriteToSavedPhotosAlbum(image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
 
 }
 -(void)switchEmitter:(id)sender
