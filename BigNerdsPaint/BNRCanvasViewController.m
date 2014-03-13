@@ -21,6 +21,7 @@
         // Custom initialization
         UIBarButtonItem *saveBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(saveImage:)];
         self.navigationItem.rightBarButtonItem=saveBtn;
+        
     }
     return self;
 }
@@ -32,22 +33,6 @@
     drawScreen=[[MyLineDrawingView alloc]initWithFrame:CGRectMake(0, 45, 768, 1004)];
     [drawScreen setBackgroundColor:[UIColor whiteColor]];
     [self.view addSubview:drawScreen];
-    
-    
-    UIButton *undoButton=[UIButton  buttonWithType:UIButtonTypeCustom];
-    [undoButton setTitle:@"UNDO" forState:UIControlStateNormal];
-    [undoButton setBackgroundColor:[UIColor blackColor]];
-    undoButton.frame=CGRectMake(self.view.center.x, self.view.center.y, 100, 40);
-    [undoButton addTarget:self action:@selector(undoButtonClicked:) forControlEvents:UIControlEventTouchDown];
-    [self.view addSubview:undoButton];
-    
-    
-    UIButton *redoButton=[UIButton  buttonWithType:UIButtonTypeCustom];
-    [redoButton setTitle:@"REDO" forState:UIControlStateNormal];
-    [redoButton setBackgroundColor:[UIColor blackColor]];
-    redoButton.frame=CGRectMake(self.view.center.x+120.0, self.view.center.y, 100, 40);
-    [redoButton addTarget:self action:@selector(redoButtonClicked:) forControlEvents:UIControlEventTouchDown];
-    [self.view addSubview:redoButton];
 
 }
 
@@ -57,7 +42,25 @@
 }
 -(void)saveImage:(id)sender
 {
-    NSLog(@"check");
+    UIGraphicsBeginImageContext(self.view.bounds.size);
+    [drawScreen.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    UIImageWriteToSavedPhotosAlbum(image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
+
+}
+- (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo
+{
+    //From DRAWPAD by Ray Wenderlich
+    // Was there an error?
+    if (error != NULL)
+    {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Image could not be saved.Please try again"  delegate:nil cancelButtonTitle:nil otherButtonTitles:@"Close", nil];
+        [alert show];
+    } else {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Success" message:@"Image was successfully saved in photoalbum"  delegate:nil cancelButtonTitle:nil otherButtonTitles:@"Close", nil];
+        [alert show];
+    }
 }
 
 -(IBAction)undoButtonClicked:(id)sender
