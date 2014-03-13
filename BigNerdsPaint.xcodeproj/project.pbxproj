@@ -35,6 +35,7 @@
 		E88295EF18D25767007FDB5D /* FCBrightDarkGradView.m in Sources */ = {isa = PBXBuildFile; fileRef = E88295EA18D25767007FDB5D /* FCBrightDarkGradView.m */; };
 		E88295F018D25767007FDB5D /* FCColorSwatchView.m in Sources */ = {isa = PBXBuildFile; fileRef = E88295EC18D25767007FDB5D /* FCColorSwatchView.m */; };
 		E88295F218D25828007FDB5D /* colormap.png in Resources */ = {isa = PBXBuildFile; fileRef = E88295F118D25828007FDB5D /* colormap.png */; };
+		E88295F418D25D29007FDB5D /* BNRGrowAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = E88295F318D25D29007FDB5D /* BNRGrowAnimator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,7 @@
 		E88295EB18D25767007FDB5D /* FCColorSwatchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCColorSwatchView.h; sourceTree = "<group>"; };
 		E88295EC18D25767007FDB5D /* FCColorSwatchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCColorSwatchView.m; sourceTree = "<group>"; };
 		E88295F118D25828007FDB5D /* colormap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colormap.png; sourceTree = "<group>"; };
+		E88295F318D25D29007FDB5D /* BNRGrowAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRGrowAnimator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 				3C33952218D2316B0073F847 /* BNRGalleryViewController.m */,
 				3C33952318D2316B0073F847 /* BNRGalleryViewController.xib */,
 				3CCADF0018D25CD2001564E6 /* BNRGrowAnimator.h */,
+				E88295F318D25D29007FDB5D /* BNRGrowAnimator.m */,
 				E88295E418D2575B007FDB5D /* color_picker_temp */,
 				E88295DC18D24ADC007FDB5D /* DWFParticleView.h */,
 				E88295DD18D24ADC007FDB5D /* DWFParticleView.m */,
@@ -336,6 +339,7 @@
 				3CCADF0718D25CD2001564E6 /* BNRFadeAnimator.m in Sources */,
 				E88295E218D24ADC007FDB5D /* MyLineDrawingView.m in Sources */,
 				E88295ED18D25767007FDB5D /* FCColorPickerViewController.m in Sources */,
+				E88295F418D25D29007FDB5D /* BNRGrowAnimator.m in Sources */,
 				E88295E118D24ADC007FDB5D /* DWFParticleView.m in Sources */,
 				E88295F018D25767007FDB5D /* FCColorSwatchView.m in Sources */,
 				3CCADF0818D25CD2001564E6 /* BNRGalleryLayout.m in Sources */,
